@@ -1,0 +1,8 @@
+// Creates an empty makefile called makefile and an empty c file named chip8
+touch makefile chip8.c
+
+// Running this command will give you the return for the file(s) you built. good for checking a file returned 0 or some other value 
+echo $?
+
+// run "chip8" file in this folder
+./chip8
