@@ -23,7 +23,7 @@ typedef struct {
 bool initSDL(sdl_t *sdl, const config_t config) {
     if (SDL_InitSubSystem(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER) != 0) {
         SDL_Log("Could not initialize SDL subsystems! %s\n", SDL_GetError());
-        return false; // fail
+        return false; // fail.
     }
 
     sdl->window = SDL_CreateWindow(
@@ -59,7 +59,7 @@ bool set_config_from_args(config_t *config, int argc, char **argv) {
     for (int i = 0; i < argc; i++) {
         (void)argv[i]; //unused variable (void) tells the compiler that nothing is being done with this var yet
     }
-    
+
     return true;
 }
 
