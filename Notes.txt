@@ -6,3 +6,6 @@ echo $?
 
 // run "chip8" file in this folder
 ./chip8
+
+// if parameter arg is const dont pass by reference
+
